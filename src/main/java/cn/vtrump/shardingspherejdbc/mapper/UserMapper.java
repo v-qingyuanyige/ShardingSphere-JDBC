@@ -17,6 +17,6 @@ public interface UserMapper {
     @Select("select * from t_user")
     List<User> selectAll();
     //增加一个User
-    @Insert("insert into t_user(id, name) values(#{id}, #{name}")
+    @Insert("insert into t_user(id, name) values(#{id}, #{name})")
     boolean insertUser(User user);
 }
