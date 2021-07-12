@@ -19,6 +19,6 @@ public interface CustomerMapper {
     List<Customer> selectAll();
 
     //增加一个Customer
-    @Insert("insert into t_customer(id, name) values(#{id}, #{name}")
+    @Insert("insert into t_customer(id, name) values(#{id}, #{name})")
     boolean insertCustomer(Customer customer);
 }
